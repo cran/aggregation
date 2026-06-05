@@ -6,6 +6,7 @@
 #' @examples
 #' lancaster(c(.1, .5), c(2, 4))
 #' @export
+#' @importFrom stats qgamma pchisq
 lancaster <- function(pvalues, weights)
 {
 	if(length(weights) != length(pvalues))

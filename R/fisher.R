@@ -6,6 +6,7 @@
 #' @examples
 #' fisher(c(.1, .2, .3))
 #' @export
+#' @importFrom stats pchisq
 fisher <- function(pvalues)
 {
 	pvalues <- pvalues[!is.na(pvalues)]
